@@ -177,10 +177,10 @@ build_script:
 # Authoring Toolkit artifacts.
 after_build:
 - sh: >-
-    cd /home/appveyor/projects/mle-atk;
-    7z a mleatk.zip $MLE_ROOT
+    cd /home/appveyor/projects/mle-loaders;
+    7z a mleloaders.zip $MLE_ROOT
 
 # Define artifacts to push to AppVeyor
 artifacts:
-- path: mleatk.zip
-  name: mle-atk
+- path: mleloaders.zip
+  name: mle-loaders
