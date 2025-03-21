@@ -22,7 +22,9 @@ libmlloaders_la_LDFLAGS = -version-info 1:0:0
 # Compiler options. Here we are adding the include directory
 # to be searched for headers included in the source code.
 libmlloaders_la_CPPFLAGS = \
-	-DMLE_NOT_DLL \
+    -DMLE_NOT_UTIL_DLL \
+    -DMLE_NOT_RUNTIME_DLL \
+    -DMLE_NOT_DWP_DLL \
 	-DMLE_INTERNAL \
 	-DMLE_REHEARSAL \
 	-DMLE_DIGITAL_WORKPRINT \
